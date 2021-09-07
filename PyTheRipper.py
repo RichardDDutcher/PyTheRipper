@@ -2,18 +2,16 @@
 import PySimpleGUI as sg
 import os.path
 
+#Global Variables
+title = "PyTheRipper"
+
+layout = [[sg.Text("Welcome To PyTheRipper")][sg.Button("Start")][sg.Button("Shutdown")]]
+
 #PytheRipper GUI
-sg.Window(title=PyTheRipper, layout=[[sg.Text("Welcome To PyTheRipper"][sg.Button("Start")][]sg.Button("Shutdown")], margins=(100, 50)).read()
+sg.Window(title, layout, margins=(100, 50)).read()
 
 while True:
-    event, values = window.read()
-																			
-		if event == "Start":
-	
-		if event == "Shutdown" OR event == sg.WIN_CLOSED:
-			break
-                 
+    event, values = Window.read()
 
-
-#code check
-print("Hello World")
+    if event == "Start":
+        print("Hello World")
