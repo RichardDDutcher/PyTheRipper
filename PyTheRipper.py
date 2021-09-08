@@ -5,7 +5,7 @@ import os.path
 
 #Global Variables
 title = "PyTheRipper"
-layout = [[sg.Text("Welcome To PyTheRipper")]]
+layout = [[sg.Text("Welcome To PyTheRipper")],[,[sg.Button(Text="Start")],[sg.Exit]]
 
 #PytheRipper GUI
 sg.Window(title, layout, margins=(100, 50)).read()
@@ -21,6 +21,6 @@ btn2.pack(side=RIGHT, padx=5)
 
 while True:
     event, values = Window.read()
-
+    
     if event == "Start":
         print("Hello World")
