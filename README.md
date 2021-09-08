@@ -1,5 +1,5 @@
 # PyTheRipper
-To Start the Program just run:
+To start the program run the command:
 
         python3 Initialization.py
         
